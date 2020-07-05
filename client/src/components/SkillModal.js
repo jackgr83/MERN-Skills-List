@@ -54,7 +54,7 @@ class ItemModal extends Component {
                     color="dark"
                     style={{marginBottom: '2rem'}}
                     onClick={this.toggle}
-                >Add Item</Button> : <h4 className="mb-3 ml-4">Please log in to manage items</h4> }
+                >Add Skill</Button> : <h4 className="mb-3 ml-4">Please log in to modify skills list.</h4> }
 
                 
                 
@@ -62,23 +62,23 @@ class ItemModal extends Component {
                     isOpen={this.state.modal}
                     toggle={this.toggle}
                 >
-                    <ModalHeader toggle={this.toggle}>Add To Shopping List</ModalHeader>
+                    <ModalHeader toggle={this.toggle}>Add To Skills List</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.onSubmit}>
                             <FormGroup>
-                                <Label for="item">Item</Label>
+                                <Label for="item">Skill</Label>
                                 <Input 
                                     type="text"
                                     name="name"
                                     id="item"
-                                    placeholder="Add shopping item"
+                                    placeholder="Add skill"
                                     onChange={this.onChange}
                                 />
                                 <Button
                                     color="dark"
                                     style={{marginTop: '2rem'}}
                                     block
-                                >Add Item</Button>
+                                >Add Skill</Button>
                             </FormGroup>
                         </Form>
                     </ModalBody>
